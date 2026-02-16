@@ -19,7 +19,7 @@ def projectile_motion(v_0, theta, dt):
 
     t_up = v_0y / g
     t_D = np.sqrt(2*s_y/g)
-    t_T = t_up + t_D
+    t_T = t_up + t_D # I know that for a symetrical projectile, t_up = t_D, but I want to show the calculations for both-- so I can use this function for non-symmetrical projectiles in the future
 
     s_x = v_0x * t_T
 
@@ -33,7 +33,6 @@ def projectile_motion(v_0, theta, dt):
     return x, y, t
 
 x, y, t = projectile_motion(v_0, theta, dt)
-print(x)
 
 # -- Plotting --
 plt.figure(figsize=(10, 5))
